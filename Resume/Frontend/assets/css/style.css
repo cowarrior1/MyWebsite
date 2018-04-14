@@ -1,0 +1,90 @@
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -7.5em 0 0 0 var(--hover), inset 7.5em 0 0 0 var(--hover);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 17em -17em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 18em 0 0 0 var(--hover);
+}
+
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+body{
+  background: #17181c;
+}
+
+.buttons {
+  color: #fff;
+  background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  font-size: 22px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 4;
+  margin: 1em;
+  width: 10em;
+  height: 10em;
+}
+
+
+h1 {
+  font-weight: 400;
+  font-size: 50px;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
